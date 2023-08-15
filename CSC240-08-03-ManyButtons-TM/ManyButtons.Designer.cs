@@ -42,6 +42,7 @@
             redButton.TabIndex = 0;
             redButton.Text = "Red";
             redButton.UseVisualStyleBackColor = true;
+            redButton.Click += RedButton_Click;
             // 
             // whiteButton
             // 
@@ -51,6 +52,7 @@
             whiteButton.TabIndex = 1;
             whiteButton.Text = "White";
             whiteButton.UseVisualStyleBackColor = true;
+            whiteButton.Click += whiteButton_Click;
             // 
             // blueButton
             // 
@@ -60,6 +62,7 @@
             blueButton.TabIndex = 2;
             blueButton.Text = "Blue";
             blueButton.UseVisualStyleBackColor = true;
+            blueButton.Click += blueButton_Click;
             // 
             // favoriteButton
             // 
@@ -69,6 +72,7 @@
             favoriteButton.TabIndex = 3;
             favoriteButton.Text = "My favorite color";
             favoriteButton.UseVisualStyleBackColor = true;
+            favoriteButton.Click += blueButton_Click;
             // 
             // ManyButtonsForm
             // 
@@ -80,6 +84,7 @@
             Controls.Add(whiteButton);
             Controls.Add(redButton);
             Name = "ManyButtonsForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Many Buttons";
             ResumeLayout(false);
         }
